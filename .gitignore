@@ -1,0 +1,23 @@
+# Arduino / ESP8266 / ESP32
+
+# Build artifacts
+*.bin
+*.hex
+*.elf
+*.eep
+*.hex
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.swp
+*~
