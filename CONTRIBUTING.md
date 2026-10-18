@@ -17,5 +17,7 @@ Antes de abrir issues ou pull requests, por favor leia estas orientações:
 
 - Responsabilidades
   - Este repositório é mantido por v-cap em nome do GEB. Alterações significativas podem ser discutidas antes de serem mescladas.
+ 
+Nota: Este projeto foi desenvolvido com o auxílio da ferramenta GitHub Copilot.
 
 Obrigado!
