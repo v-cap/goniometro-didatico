@@ -25,7 +25,7 @@ O projeto está vinculado ao GEB e foi desenvolvido como base educacional para d
 
 ## Arquivo principal
 
-- `leitura_gy521_mpu6050_goniometro_didatico.ino`
+- [`leitura_gy521_mpu6050_goniometro_didatico.ino`](https://github.com/v-cap/goniometro-didatico/blob/main/sketch/leitura_gy521_mpu6050_goniometro_didatico.ino)
 
 ## Como usar
 
