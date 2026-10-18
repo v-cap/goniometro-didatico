@@ -17,7 +17,7 @@ O projeto está vinculado ao GEB e foi desenvolvido como base educacional para d
 
 ## Hardware
 
-- Arduino Uno / compatível
+- Arduino Nano / compatível
 - MPU-6050
 - Conexão I2C padronizada (SDA/SCL)
 
