@@ -1,0 +1,32 @@
+name: Arduino CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-sketch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          set -e
+          curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+          export PATH="$HOME/.arduino15/bin:$PATH"
+          arduino-cli config init
+          arduino-cli core update-index
+          arduino-cli core install arduino:avr
+
+      - name: Verify compilation (Arduino Uno)
+        run: |
+          export PATH="$HOME/.arduino15/bin:$PATH"
+          arduino-cli compile --fqbn arduino:avr:uno . || (echo "Compilação falhou" && exit 1)
+
+      - name: Success message
+        if: success()
+        run: echo "Compilação do sketch concluída com sucesso (ou não aplicável)."
