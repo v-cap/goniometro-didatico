@@ -1,6 +1,10 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 # Goniômetro Digital Didático
 
 Projeto inicial de um goniômetro digital didático desenvolvido para leitura de ângulos do cotovelo utilizando o sensor MPU-6050.
+
+> Nota: repositório privado.
 
 ## Descrição
 
@@ -17,7 +21,7 @@ O projeto está vinculado ao GEB e foi desenvolvido como base educacional para d
 
 ## Hardware
 
-- Arduino Nano / compatível
+- Arduino Uno / compatível
 - MPU-6050
 - Conexão I2C padronizada (SDA/SCL)
 
@@ -33,6 +37,10 @@ O projeto está vinculado ao GEB e foi desenvolvido como base educacional para d
 4. Posicione o braço e o antebraço conforme as instruções exibidas no monitor serial.
 5. Pressione `z` para definir a referência inicial.
 6. Inicie o movimento e acompanhe o ângulo calculado.
+
+## Contribuindo
+
+Veja o arquivo `CONTRIBUTING.md` com instruções para contribuir.
 
 ## Licença
 
