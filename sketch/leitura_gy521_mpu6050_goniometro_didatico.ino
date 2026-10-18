@@ -119,8 +119,15 @@ void inicializarAngulos()
   float ay = AcY / 16384.0;
   float az = AcZ / 16384.0;
 
-  roll = atan2(ay, az) * 180.0 / PI;
-  pitch = atan2(-ax, sqrt(ay * ay + az * az)) * 180.0 / PI;
+  roll =
+      atan2(ay, az)
+      * 180.0 / PI;
+
+  pitch =
+      atan2(
+          -ax,
+          sqrt(ay * ay + az * az))
+      * 180.0 / PI;
 }
 
 //--------------------------------------------------
@@ -165,7 +172,10 @@ void loop()
 
   unsigned long agora = micros();
 
-  float dt = (agora - ultimoCiclo) / 1000000.0;
+  float dt =
+      (agora - ultimoCiclo)
+      / 1000000.0;
+
   ultimoCiclo = agora;
 
   //-----------------------------------------
@@ -186,15 +196,25 @@ void loop()
   // Conversão giroscópio
   //-----------------------------------------
 
-  float gx = (GyX - offsetGX) / 131.0;
-  float gy = (GyY - offsetGY) / 131.0;
+  float gx =
+      (GyX - offsetGX) / 131.0;
+
+  float gy =
+      (GyY - offsetGY) / 131.0;
 
   //-----------------------------------------
   // Ângulos do acelerômetro
   //-----------------------------------------
 
-  float rollAcc = atan2(ay, az) * 180.0 / PI;
-  float pitchAcc = atan2(-ax, sqrt(ay * ay + az * az)) * 180.0 / PI;
+  float rollAcc =
+      atan2(ay, az)
+      * 180.0 / PI;
+
+  float pitchAcc =
+      atan2(
+          -ax,
+          sqrt(ay * ay + az * az))
+      * 180.0 / PI;
 
   //-----------------------------------------
   // Integração do giroscópio
@@ -209,8 +229,13 @@ void loop()
 
   const float alpha = 0.98;
 
-  roll = alpha * roll + (1.0 - alpha) * rollAcc;
-  pitch = alpha * pitch + (1.0 - alpha) * pitchAcc;
+  roll =
+      alpha * roll +
+      (1.0 - alpha) * rollAcc;
+
+  pitch =
+      alpha * pitch +
+      (1.0 - alpha) * pitchAcc;
 
   //-----------------------------------------
   // Definir Referência
@@ -270,7 +295,10 @@ void loop()
 
   if (millis() - ultimoRelatorio >= 5000)
   {
-    float taxaReal = contadorAmostras * 1000.0 / (millis() - ultimoRelatorio);
+    float taxaReal =
+        contadorAmostras *
+        1000.0 /
+        (millis() - ultimoRelatorio);
 
     // Serial.println("---------------------------------");
     // Serial.print("Taxa de Amostragem: ");
