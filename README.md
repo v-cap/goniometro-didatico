@@ -36,6 +36,10 @@ O projeto está vinculado ao GEB e foi desenvolvido como base educacional para d
 5. Pressione `z` para definir a referência inicial.
 6. Inicie o movimento e acompanhe o ângulo calculado.
 
+## Ferramentas
+
+Este projeto foi desenvolvido com o auxílio da ferramenta GitHub Copilot.
+
 ## Contribuindo
 
 Veja o arquivo `CONTRIBUTING.md` com instruções para contribuir.
