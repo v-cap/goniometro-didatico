@@ -4,8 +4,6 @@
 
 Projeto inicial de um goniômetro digital didático desenvolvido para leitura de ângulos do cotovelo utilizando o sensor MPU-6050.
 
-> Nota: repositório privado.
-
 ## Descrição
 
 Este repositório contém a primeira versão do código para um sistema de medição de flexão do cotovelo, com:
